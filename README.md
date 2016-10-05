@@ -6,6 +6,5 @@ A simple CLI wrapper around [merge-yaml](https://www.npmjs.com/package/merge-yam
 
 ```shell
 npm i -g merge-yaml-cli
-merge-yaml -i "example.yaml includes/*.yml" -o merged.yml
+merge-yaml -i example.yaml includes/*.yml -o merged.yml
 ```
-*Note: don't forget the quotes, otherwise your shell may expand wildcard paths.*

@@ -8,7 +8,7 @@ var jsYaml = require('js-yaml');
 
 var args = require('yargs')
     .usage('Usage: $0 <options>')
-    .example('$0 -i "one.yml two/*.yml" -o out.yml')
+    .example('$0 -i one.yml two/*.yml -o out.yml')
     .array('i')
     .alias('i', 'inputs')
     .describe('i', 'Input files specified as glob file patterns')
