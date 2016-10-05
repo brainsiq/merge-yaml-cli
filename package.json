@@ -1,0 +1,24 @@
+{
+  "name": "merge-yaml-cli",
+  "version": "1.0.0",
+  "description": "CLI utility for merging YAML files",
+  "bin": {
+      "merge-yaml": "./index.js"
+  },
+  "keywords": [
+    "merge",
+    "yaml",
+    "cli"
+  ],
+  "author": {
+    "name": "Chris Impey",
+    "email": "chris@impey.io"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "glob": "^7.1.0",
+    "js-yaml": "^3.6.1",
+    "merge-yaml": "^1.0.0",
+    "yargs": "^6.0.0"
+  }
+}
