@@ -1,12 +1,12 @@
 #!/usr/bin/env node
 
-var fs = require('fs')
-var os = require('os')
-var glob = require('glob')
-var mergeYaml = require('merge-yaml')
-var jsYaml = require('js-yaml')
+const fs = require('fs')
+const os = require('os')
+const glob = require('glob')
+const mergeYaml = require('merge-yaml')
+const jsYaml = require('js-yaml')
 
-var args = require('yargs')
+const args = require('yargs')
     .usage('Usage: $0 <options>')
     .example('$0 -i one.yml two/*.yml -o out.yml')
     .array('i')
@@ -20,12 +20,12 @@ var args = require('yargs')
     .strict()
     .argv
 
-var files = [].concat.apply([], args.inputs.map(g => glob.sync(g, {nodir: true})))
+const files = [].concat.apply([], args.inputs.map(g => glob.sync(g, {nodir: true})))
 
 console.log('Merging files:')
 console.log(files.join(os.EOL), os.EOL)
 
-var swagger = mergeYaml(files)
+const swagger = mergeYaml(files)
 
 console.log('Writing:')
 console.log(args.output)
