@@ -15,14 +15,20 @@
     "email": "chris@impey.io"
   },
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/brainsiq/merge-yaml-cli.git"
+    "type": "git",
+    "url": "https://github.com/brainsiq/merge-yaml-cli.git"
   },
   "license": "MIT",
+  "scripts": {
+    "test": "standard"
+  },
   "dependencies": {
     "glob": "^7.1.0",
     "js-yaml": "^3.6.1",
     "merge-yaml": "^1.0.0",
     "yargs": "^6.0.0"
+  },
+  "devDependencies": {
+    "standard": "^8.3.0"
   }
 }
