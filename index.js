@@ -25,11 +25,11 @@ const files = [].concat.apply([], args.inputs.map(g => glob.sync(g, {nodir: true
 console.log('Merging files:')
 console.log(files.join(os.EOL), os.EOL)
 
-const swagger = mergeYaml(files)
+const mergeResult = mergeYaml(files)
 
 console.log('Writing:')
 console.log(args.output)
-fs.writeFileSync(args.output, jsYaml.safeDump(swagger))
+fs.writeFileSync(args.output, jsYaml.safeDump(mergeResult))
 
 console.log(os.EOL)
 console.log('Finished merge!')
