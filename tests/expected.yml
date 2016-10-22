@@ -1,0 +1,4 @@
+test:
+  test-property: hello
+  override-property: everyone
+  new-property: hello world

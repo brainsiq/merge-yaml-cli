@@ -20,7 +20,9 @@
   },
   "license": "MIT",
   "scripts": {
-    "test": "standard"
+    "test": "npm run test:lint && npm run test:cli",
+    "test:lint": "standard",
+    "test:cli": "docker-compose run --rm test"
   },
   "dependencies": {
     "glob": "^7.1.0",
