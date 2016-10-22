@@ -12,3 +12,9 @@ A simple CLI wrapper around [merge-yaml](https://www.npmjs.com/package/merge-yam
 npm i -g merge-yaml-cli
 merge-yaml -i example.yaml includes/*.yml -o merged.yml
 ```
+
+#### Tests
+
+The repo contains one simple test case. `tests/base.yml` is merged with `includes/*.yml` and the output is compared with `expected.yml`.
+
+The test can be run with `yarn test` or `npm test` but requires Docker and Docker Compose to be installed.
