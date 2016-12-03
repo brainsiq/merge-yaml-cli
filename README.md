@@ -2,7 +2,7 @@
 
 [![JavaScript Style Guide](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
 
-[![CircleCI](https://circleci.com/gh/brainsiq/merge-yaml-cli/tree/master.svg?style=svg&circle-token=077fdc5153f1faebffa5e687a44369759c6a820d)](https://circleci.com/gh/brainsiq/merge-yaml-cli/tree/master)
+[![CircleCI](https://circleci.com/gh/brainsiq/merge-yaml-cli/tree/master.svg?style=svg&circle-token=077fdc5153f1faebffa5e687a44369759c6a820d)](https://circleci.com/gh/brainsiq/merge-yaml-cli/tree/master) [![Known Vulnerabilities](https://snyk.io/test/github/brainsiq/merge-yaml-cli/ac54a80e5f7f1648aecc380c7aea470f49f1ccef/badge.svg)](https://snyk.io/test/github/brainsiq/merge-yaml-cli/ac54a80e5f7f1648aecc380c7aea470f49f1ccef)
 
 A simple CLI wrapper around [merge-yaml](https://www.npmjs.com/package/merge-yaml) using [glob](https://www.npmjs.com/package/glob) patterns to specify input files.
 
