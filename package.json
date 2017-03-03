@@ -28,7 +28,7 @@
     "glob": "^7.1.0",
     "js-yaml": "^3.7.0",
     "merge-yaml": "^1.0.0",
-    "yargs": "^6.5.0"
+    "yargs": "^7.0.1"
   },
   "devDependencies": {
     "standard": "^8.6.0"
