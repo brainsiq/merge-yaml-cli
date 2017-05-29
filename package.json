@@ -2,8 +2,9 @@
   "name": "merge-yaml-cli",
   "version": "1.0.5",
   "description": "CLI utility for merging YAML files",
+  "main": "index.js",
   "bin": {
-    "merge-yaml": "./index.js"
+    "merge-yaml": "./cli.js"
   },
   "keywords": [
     "merge",

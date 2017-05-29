@@ -4,5 +4,5 @@ test:
     - .:/module
   working_dir: /module
   command: sh -c "
-    node index.js -i tests/base.yml tests/includes/*.yml -o tests/out.yml &&
+    node cli.js -i tests/base.yml tests/includes/*.yml -o tests/out.yml &&
     cmp tests/out.yml tests/expected.yml"
