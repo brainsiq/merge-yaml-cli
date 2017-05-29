@@ -5,7 +5,8 @@
 
 [![NPM](https://nodei.co/npm/merge-yaml-cli.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/merge-yaml-cli/)
 
-A simple CLI wrapper around [merge-yaml](https://www.npmjs.com/package/merge-yaml) using [glob](https://www.npmjs.com/package/glob) patterns to specify input files.
+Merges YAML files together using [glob](https://www.npmjs.com/package/glob) patterns to specify input files, with a CLI to
+write out the result as a file.
 
 #### Usage
 
