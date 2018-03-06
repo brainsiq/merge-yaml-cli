@@ -1,3 +1,5 @@
+'use strict'
+
 const glob = require('glob')
 const mergeYaml = require('merge-yaml')
 const jsYaml = require('js-yaml')
