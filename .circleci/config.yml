@@ -17,5 +17,3 @@ jobs:
         paths:
         - ./node_modules
     - run: npm run test:ci
-    - store_test_results:
-        path: /tmp/circleci-test-results
