@@ -1,5 +1,5 @@
 test:
-  image: node:4-alpine
+  image: node:8-alpine
   volumes:
     - .:/module
   working_dir: /module
