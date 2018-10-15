@@ -1,0 +1,21 @@
+version: 2
+jobs:
+  build:
+    # machine has a misc install of node that is good enough for linting
+    # and docker-compose for running the integration test
+    machine: true
+    steps:
+    - checkout
+    - restore_cache:
+        keys:
+        - v1-dep-{{ .Branch }}-
+        # Default branch if above not available
+        - v1-dep-master-
+    - run: npm install
+    - save_cache:
+        key: v1-dep-{{ .Branch }}-{{ epoch }}
+        paths:
+        - ./node_modules
+    - run: npm run test:ci
+    - store_test_results:
+        path: /tmp/circleci-test-results
