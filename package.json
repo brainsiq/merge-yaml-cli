@@ -27,7 +27,7 @@
   },
   "dependencies": {
     "glob": "^7.1.0",
-    "js-yaml": "^3.7.0",
+    "js-yaml": "^3.12.2",
     "merge-yaml": "^1.0.0",
     "yargs": "^8.0.1"
   },
