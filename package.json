@@ -23,15 +23,16 @@
   "scripts": {
     "test": "npm run test:lint && docker-compose run --rm test",
     "test:ci": "npm run test:lint && docker-compose run test",
-    "test:lint": "standard"
+    "test:lint": "standard",
+    "lint:fix": "standard --fix"
   },
   "dependencies": {
     "glob": "^7.1.0",
-    "js-yaml": "^3.7.0",
+    "js-yaml": "^4.1.0",
     "merge-yaml": "^1.0.0",
-    "yargs": "^8.0.1"
+    "yargs": "^17.0.1"
   },
   "devDependencies": {
-    "standard": "^10.0.0"
+    "standard": "^16.0.3"
   }
 }
